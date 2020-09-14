@@ -25,6 +25,7 @@ if (isset($_POST['search'])) {
       <div class="col-md-6">
         <a href="blog-single.html" class="blog-entry element-animate" data-animate-effect="fadeIn">
           <img src="admin/images/<?php echo $post_image;?>" alt="Image placeholder">
+          <!-- <img src="/images/<?php echo $post_image;?>" alt="Image placeholder"> -->
           <div class="blog-content-body">
             <div class="post-meta">
               <span class="author mr-2"><?php echo "Authour's Name Here";?></span>&bullet;

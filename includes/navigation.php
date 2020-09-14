@@ -35,7 +35,7 @@
       <div class="collapse navbar-collapse" id="navbarMenu">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link active" href="index.php">Home</a>
           </li>
               <?php show_cat(); ?>
         </ul>
