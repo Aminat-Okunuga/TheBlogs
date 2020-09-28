@@ -38,6 +38,12 @@
             <a class="nav-link active" href="index.php">Home</a>
           </li>
               <?php show_cat(); ?>
+              <li class="nav-item">
+            <a class="nav-link active"  href="register.php">Signup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"  href="login.php">Login</a>
+          </li>
         </ul>
 
       </div>

@@ -1,8 +1,7 @@
 <?php
-
 $error = "";
-?>
 
+?>
 <html lang="en">
   <head>
     <title>TheBlogs &mdash; Aminat Okunuga</title>
@@ -24,19 +23,24 @@ $error = "";
   </head>
   <body>
 
-<form action="Controllers/login.php" method="post" role="form" class="form">
-  <h3>Login</h3>
-  <!-- <p class="alert alert-danger">*<?php echo $error; ?></p> -->
+
+<form action="Controllers/register.php" method="post" role="form" class="form" autocomplete="off">
+  <h3>Sign Up</h3>
+  <!-- <p class="alert alert-danger">*<?=$error;?></p> -->
   <div class="form-group">
-    <label>Email</label>    
+    <!-- <label>Username</label> -->
+    <input type="text" name="username" placeholder="Username" class="form-control">
+  </div>
+  <div class="form-group">
+    <!-- <label>Email</label> -->
     <input type="email" name="email" placeholder="E-Mail" class="form-control">
   </div>
   <div class="form-group">
-    <label>Password</label>
+    <!-- <label>Password</label> -->
     <input type="password" name="password" placeholder="Password" placeholder="Password" class="form-control">
   </div>
   <div class="form-group">
-    <input type="submit" name="login" value="Login" class="btn btn-primary">
+    <input type="submit" name="register" value="Continue" class="btn btn-primary">
   </div>
-  <span>Don't have an account?<a href="register.php"> Register here</a></span>
+  <span>Already have an account?<a href="login.php"> Login here</a></span>
 </form>
