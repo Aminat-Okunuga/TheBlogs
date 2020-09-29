@@ -17,7 +17,7 @@
 
 
                         <h1 class="page-header">
-                            Welcome to the Administration Panel
+                            Welcome to TheBlogs' Administration Panel
                         </h1>
                     </div>
                 </div>

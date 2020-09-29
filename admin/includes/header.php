@@ -2,7 +2,7 @@
 <?php session_start(); ?>
 <?php include "db.php"; ?>
 <?php include "functions.php"; ?>
-<?php (isset($_SESSION['userLogged'])) ? $user = $_SESSION['userLogged'] : header("Location: ../cms-admin.php");
+<?php (isset($_SESSION['userLogged'])) ? $user = $_SESSION['userLogged'] : header("Location: ../index.php");
 $sql = mysqli_query($connection, "SELECT * FROM users WHERE email='$user'");
 $row = mysqli_fetch_array($sql);
 $username = $row['username'];
@@ -20,7 +20,7 @@ $role = $row['is_admin'];
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Administration Panel</title>
+    <title>TheBlogs - Administration Panel</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
