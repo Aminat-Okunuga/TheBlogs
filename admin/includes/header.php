@@ -2,7 +2,7 @@
 <?php session_start(); ?>
 <?php include "db.php"; ?>
 <?php include "functions.php"; ?>
-<?php (isset($_SESSION['userLogged'])) ? $user = $_SESSION['userLogged'] : header("Location: ../index.php");
+<?php (isset($_SESSION['userLogged'])) ? $user = $_SESSION['userLogged'] : header("Location: ../admin/index.php");
 $sql = mysqli_query($connection, "SELECT * FROM users WHERE email='$user'");
 $row = mysqli_fetch_array($sql);
 $username = $row['username'];
